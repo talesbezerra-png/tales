@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>brasa.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>brasa burguer</h1>
+    <p>Os melhores hambúrgueres da cidade 🍔</p>
+</header>
+
+<nav>
+    <a href="#cardapio">Cardápio</a>
+    <a href="#pedidos">Pedidos</a>
+</nav>
+
+<section id="cardapio">
+    <h2>Cardápio</h2>
+
+    <div class="item">
+        <img src="https://imagens.jotaja.com/produtos/061cfdac-b308-4aca-848a-26c72125c6e0.jpg" alt="Hambúrguer Artesanal">
+        <h3>Combo artesanal + fritas </h3>
+        <p>R$ 35,00</p>
+        <button onclick="adicionarPedido('Hambúrguer Artesanal')">+</button>
+    </div>
+
+    <div class="item">
+        <img src="https://imagens.jotaja.com/produtos/79024221-3ce9-4a59-a2bf-7dde82d2921e.jpg" alt="Hambúrguer Duplo">
+        <h3>Hambúrguer Duplo</h3>
+        <p>R$ 26,00</p>
+        <button onclick="adicionarPedido('Hambúrguer Duplo')">+</button>
+    </div>
+
+    <div class="item">
+        <img src="https://imagens.jotaja.com/produtos/fd8efb44-df2d-47c2-bd32-171dfb2357fc.jpg" alt="Hambúrguer Vegetariano">
+        <h3>Big Cheddar</h3>
+        <p>R$ 22,00</p>
+        <button onclick="adicionarPedido('Hambúrguer Vegetariano')">+</button>
+    </div>
+</section>
+
+<section id="pedidos">
+    <h2>Seus pedidos</h2>
+    <ul id="listaPedidos"></ul>
+    <p><strong>Total: R$ <span id="total">0</span></strong></p>
+    <button onclick="finalizarPedido()">Finalizar pedido</button>
+</section>
+
+<div id="talindev">
+    <div class="losango">
+        <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/26175048-programador-avatar-preenchidas-esboco-icone-vetor.jpg" alt="TalinDev">
+    </div>
+    <span>TalinDev</span>
+</div>
+
+<footer>
+    <p>© 2026 - brasa burguer</p>
+</footer>
+
+<script src="java.js"></script>
+</body>
+</html>
